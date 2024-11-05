@@ -1,0 +1,26 @@
+[
+  {
+    "id": "P000",
+    "category": "All"
+  },
+  {
+    "id": "P001",
+    "category": "Phone"
+  },
+  {
+    "id": "P002",
+    "category": "Laptop"
+  },
+  {
+    "id": "P003",
+    "category": "Watch"
+  },
+  {
+    "id": "P004",
+    "category": "Accessories"
+  },
+  {
+    "id": "P005",
+    "category": "MacBook"
+  }
+]
