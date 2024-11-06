@@ -2,27 +2,42 @@ import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import Card from "./Card";
 
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useLocation, useParams } from "react-router-dom";
 
 // import Banner from "./Banner/Banner";
 
 const Cards = () => {
   const data = useLoaderData();
-
   const { category } = useParams();
-
   const [products, setProducts] = useState([]);
+  const defaultLocation = useLocation();
+  // const isDef = defaultLocation.pathname === "/";
+  // console.log(defaultLocation);
+
+  // useEffect(() => {
+  //   console.log(category);
+  //   if (!category || category === "All") {
+  //     setProducts(data);
+  //   } else {
+  //     const filteredByCategory = [...data].filter(
+  //       (product) => product.category === category
+  //     );
+  //     setProducts(filteredByCategory);
+  //   }
+  // }, [category, data]);
 
   useEffect(() => {
-    if (category === "All") {
+    if (defaultLocation.pathname === "/") {
+      setProducts(data);
+    } else if (!category || category === "All") {
       setProducts(data);
     } else {
-      const filteredByCategory = [...data].filter(
+      const filteredByCategory = data.filter(
         (product) => product.category === category
       );
       setProducts(filteredByCategory);
     }
-  }, [category, data]);
+  }, [category, data, defaultLocation.pathname]);
 
   return (
     <>

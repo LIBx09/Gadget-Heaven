@@ -5,6 +5,8 @@ import Home from "../Pages/Home/Home";
 import Statistics from "../Pages/Statistics/Statistics";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import Cards from "../components/Cards";
+import Futured from "../Pages/Futured/Futured";
+import CardDetails from "../components/CardDetails";
 // import Cards from "../components/Cards";
 
 const router = createBrowserRouter([
@@ -19,6 +21,12 @@ const router = createBrowserRouter([
         loader: () => fetch("/categories.json"),
         children: [
           {
+            path: "/",
+            element: <Cards />,
+            errorElement: <Error />,
+            loader: () => fetch("/data.json"),
+          },
+          {
             path: "/category/:category",
             element: <Cards />,
             errorElement: <Error />,
@@ -27,12 +35,21 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "statistics",
-        element: <Statistics />,
+        path: "/detail/:id",
+        element: <CardDetails />,
+        loader: () => fetch("/data.json"),
       },
       {
         path: "dashboard",
         element: <Dashboard />,
+      },
+      {
+        path: "statistics",
+        element: <Statistics />,
+      },
+      {
+        path: "future",
+        element: <Futured />,
       },
     ],
   },

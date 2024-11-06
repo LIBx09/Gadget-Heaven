@@ -21,6 +21,16 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
+          to={"dashboard"}
+          className={({ isActive }) =>
+            isActive ? "btn btn-warning btn-outline" : "btn btn-ghost"
+          }
+        >
+          Dashboard
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to={"statistics"}
           className={({ isActive }) =>
             isActive ? "btn btn-warning btn-outline" : "btn btn-ghost"
@@ -29,14 +39,15 @@ const Navbar = () => {
           Statistics
         </NavLink>
       </li>
+
       <li>
         <NavLink
-          to={"dashboard"}
+          to={"future"}
           className={({ isActive }) =>
             isActive ? "btn btn-warning btn-outline" : "btn btn-ghost"
           }
         >
-          Dashboard
+          About Us
         </NavLink>
       </li>
     </>

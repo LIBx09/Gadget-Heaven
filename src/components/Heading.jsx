@@ -12,7 +12,7 @@ const Heading = ({ title, subtitle }) => {
     // <div className="bg-[#9538E2] h-[160px] text-center pt-5">
     <div
       className={`bg-[#9538E2] ${
-        isDashLocation ? "h-[250px]" : "h-[160px]"
+        isDashLocation ? "h-[320px] md:h-[250px]" : "h-[160px]"
       } text-center pt-5`}
     >
       <h3 className="text-3xl font-bold text-white">{title}</h3>
