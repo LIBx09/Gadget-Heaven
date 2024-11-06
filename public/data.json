@@ -14,7 +14,7 @@
       "RAM: 8 GB"
     ],
     "availability": true,
-    "rating": 4.7
+    "rating": 5
   },
   {
     "id": "P002",
@@ -31,7 +31,7 @@
       "RAM: 4 GB"
     ],
     "availability": true,
-    "rating": 4.2
+    "rating": 5
   },
   {
     "id": "P003",
@@ -48,7 +48,7 @@
       "RAM: 12 GB"
     ],
     "availability": true,
-    "rating": 4.8
+    "rating": 1
   },
   {
     "id": "P004",
@@ -65,7 +65,7 @@
       "RAM: 12 GB"
     ],
     "availability": true,
-    "rating": 4.6
+    "rating": 2
   },
   {
     "id": "P005",
@@ -82,7 +82,7 @@
       "RAM: 8 GB"
     ],
     "availability": true,
-    "rating": 4.9
+    "rating": 4
   },
   {
     "id": "P006",
@@ -99,7 +99,7 @@
       "RAM: 6 GB"
     ],
     "availability": true,
-    "rating": 4.5
+    "rating": 3
   },
   {
     "id": "P007",
@@ -116,7 +116,7 @@
       "Display: 15.6 inches FHD"
     ],
     "availability": true,
-    "rating": 4.9
+    "rating": 2
   },
   {
     "id": "P008",
@@ -133,7 +133,7 @@
       "Weight: 1.2 kg"
     ],
     "availability": true,
-    "rating": 4.8
+    "rating": 4
   },
   {
     "id": "P009",
@@ -150,7 +150,7 @@
       "Weight: 1.5 kg"
     ],
     "availability": true,
-    "rating": 4.6
+    "rating": 4
   },
   {
     "id": "P010",
@@ -167,7 +167,7 @@
       "Features: GPS, Heart Rate Monitoring"
     ],
     "availability": true,
-    "rating": 4.6
+    "rating": 4
   },
   {
     "id": "P011",
@@ -184,7 +184,7 @@
       "Features: Sleep Tracking, Notifications"
     ],
     "availability": true,
-    "rating": 4.7
+    "rating": 3
   },
   {
     "id": "P012",
@@ -201,6 +201,6 @@
       "Features: Heart Rate Monitor"
     ],
     "availability": true,
-    "rating": 4.5
+    "rating": 2
   }
 ]
