@@ -1,6 +1,11 @@
+import { Helmet } from "react-helmet-async";
+
 const Futured = () => {
   return (
     <div>
+      <Helmet>
+        <title>About Us</title>
+      </Helmet>
       <div className="p-8 bg-gray-100 rounded-lg shadow-md">
         <h2 className="text-3xl font-bold text-blue-500 mb-4">
           About Gadget Heaven

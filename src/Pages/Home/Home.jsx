@@ -1,6 +1,8 @@
 import { Outlet, useLoaderData } from "react-router-dom";
 import Categories from "../../components/Categories";
 import Banner from "../../components/Banner/Banner";
+import { Helmet } from "react-helmet";
+
 // import Navbar from "../Shared/Navbar/Navbar";
 // import Cards from "../../components/Cards";
 // import { useEffect, useState } from "react";
@@ -28,13 +30,16 @@ const Home = () => {
   return (
     <>
       <div>
+        <Helmet>
+          <title>Home</title>
+        </Helmet>
         <Banner />
 
         <h2 className="font-bold text-4xl text-black text-center mt-10">
           Explore Cutting-Edge Gadgets
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-4 w-10/12 mx-auto gap-3 mb-20 mt-5">
-          <div className="pt-24">
+          <div className="">
             <Categories cate={categories} />
           </div>
           <div className="col-span-3">

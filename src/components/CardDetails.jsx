@@ -2,18 +2,17 @@ import { CiHeart } from "react-icons/ci";
 
 import { IoCartOutline } from "react-icons/io5";
 import { useLoaderData, useParams } from "react-router-dom";
+import { ProductProvider } from "../Provider/ProductContext";
+import { useContext } from "react";
 
 const CardDetails = () => {
   const { id } = useParams();
   const data = useLoaderData();
+  const { addProduct, addWish } = useContext(ProductProvider);
 
-  const product = data.find((item) => item.id === id);
+  const product = data.find((item) => item.id == id);
 
   const { image, title, price, description, specification, rating } = product;
-
-  const handleAddToCart = () => {};
-
-  const handleWishList = () => {};
 
   return (
     <>
@@ -59,7 +58,6 @@ const CardDetails = () => {
                           index < rating ? "bg-orange-400" : "bg-gray-300"
                         }`}
                         checked={index < rating}
-                        readOnly
                       />
                     ))}
                   </div>
@@ -68,13 +66,13 @@ const CardDetails = () => {
             </div>
             <div className="flex items-center gap-2">
               <button
-                onClick={() => handleAddToCart(id)}
+                onClick={() => addProduct(id)}
                 className="btn text-sm md:text-xl font-semibold w-44 bg-[#59C6D2] lg:mb-0"
               >
                 Add to Cart <IoCartOutline />
               </button>
               <button
-                onClick={() => handleWishList(id)}
+                onClick={() => addWish(id)}
                 className="btn text-xl  font-semibold bg-[#59C6D2]"
               >
                 <CiHeart />

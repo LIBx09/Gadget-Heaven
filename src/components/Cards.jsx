@@ -10,6 +10,7 @@ const Cards = () => {
   const data = useLoaderData();
   const { category } = useParams();
   const [products, setProducts] = useState([]);
+
   const defaultLocation = useLocation();
   // const isDef = defaultLocation.pathname === "/";
   // console.log(defaultLocation);

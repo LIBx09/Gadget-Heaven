@@ -42,10 +42,12 @@ const router = createBrowserRouter([
       {
         path: "dashboard",
         element: <Dashboard />,
+        loader: () => fetch("/data.json"),
       },
       {
         path: "statistics",
         element: <Statistics />,
+        loader: () => fetch("/data.json"),
       },
       {
         path: "future",

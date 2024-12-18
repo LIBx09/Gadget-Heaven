@@ -1,11 +1,16 @@
+import { useContext } from "react";
 import { FaHeart } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 // import { IoCartOutline } from "react-icons/io5";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { ProductProvider } from "../../../Provider/ProductContext";
+
 // import Banner from "../../../components/Banner/Banner";
 
 const Navbar = () => {
   const location = useLocation();
+  const { cartList } = useContext(ProductProvider);
+  console.log(cartList.length);
   const isLocation = location.pathname === "/";
 
   const navbar = (
@@ -108,16 +113,20 @@ const Navbar = () => {
               </div>
             </div>
             <div
-              tabIndex={0}
+              tabIndex={cartList.length}
               className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
             >
               <div className="card-body">
-                <span className="text-lg font-bold text-black">8 Items</span>
+                <span className="text-lg font-bold text-black">
+                  {cartList.length}
+                </span>
                 <span className="text-info">Subtotal: $999</span>
                 <div className="card-actions">
-                  <button className="btn btn-primary btn-block">
-                    View cart
-                  </button>
+                  <Link to="/dashboard">
+                    <button className="btn btn-primary btn-block">
+                      View cart
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

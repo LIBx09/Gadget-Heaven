@@ -1,10 +1,10 @@
 [
   {
-    "id": "P001",
+    "id": 1,
     "title": "Iphone 11 mini",
     "image": "https://i.postimg.cc/DzdJMf2M/i1.webp",
     "category": "Phone",
-    "price": 699.99,
+    "price": 699,
     "description": "High-performance smartphone with an amazing camera and long battery life.",
     "specification": [
       "Display: 6.7 inches AMOLED",
@@ -17,11 +17,11 @@
     "rating": 5
   },
   {
-    "id": "P002",
+    "id": 2,
     "title": "Iphone 11 pro",
     "image": "https://i.postimg.cc/44FKMSgs/i2.jpg",
     "category": "Phone",
-    "price": 299.99,
+    "price": 299,
     "description": "Affordable smartphone with essential features and decent performance.",
     "specification": [
       "Display: 6.1 inches LCD",
@@ -34,14 +34,14 @@
     "rating": 5
   },
   {
-    "id": "P003",
+    "id": 3,
     "title": "Iphone 11",
     "image": "https://i.postimg.cc/G2L8w0th/i3.jpg",
     "category": "Phone",
-    "price": 899.99,
+    "price": 899,
     "description": "Smartphone optimized for gaming with high refresh rate and powerful hardware.",
     "specification": [
-      "Display: 6.9 inches AMOLED",
+      "Display: 6 inches AMOLED",
       "Processor: MediaTek Dimensity 1200",
       "Battery: 5000 mAh",
       "Camera: 64 MP Triple Camera",
@@ -51,11 +51,11 @@
     "rating": 1
   },
   {
-    "id": "P004",
+    "id": 4,
     "title": "Iphone 12 mini",
     "image": "https://i.postimg.cc/3Rty3L0j/i4.jpg",
     "category": "Phone",
-    "price": 1299.99,
+    "price": 1299,
     "description": "Innovative foldable smartphone with stunning display and advanced features.",
     "specification": [
       "Display: 7.3 inches AMOLED",
@@ -68,11 +68,11 @@
     "rating": 2
   },
   {
-    "id": "P005",
+    "id": 5,
     "title": "Iphone 12 pro",
     "image": "https://i.postimg.cc/7hb5hgSF/i5.jpg",
     "category": "Phone",
-    "price": 749.99,
+    "price": 749,
     "description": "Smartphone with professional-grade camera features for photography enthusiasts.",
     "specification": [
       "Display: 6.5 inches OLED",
@@ -85,11 +85,11 @@
     "rating": 4
   },
   {
-    "id": "P006",
+    "id": 6,
     "title": "Iphone 12",
     "image": "https://i.postimg.cc/hvwfdfrf/i6.webp",
     "category": "Phone",
-    "price": 399.99,
+    "price": 399,
     "description": "Compact smartphone designed for easy one-handed use and portability.",
     "specification": [
       "Display: 5.8 inches OLED",
@@ -102,11 +102,11 @@
     "rating": 3
   },
   {
-    "id": "P007",
+    "id": 7,
     "title": "Walton",
     "image": "https://i.postimg.cc/dtk7Kjsd/l1.avif",
     "category": "Laptop",
-    "price": 1399.99,
+    "price": 1399,
     "description": "High-performance laptop for gaming and productivity.",
     "specification": [
       "Processor: Intel i9",
@@ -119,11 +119,11 @@
     "rating": 2
   },
   {
-    "id": "P008",
+    "id": 8,
     "title": "Doel",
     "image": "https://i.postimg.cc/Nf3KG2Fn/l2.avif",
     "category": "Laptop",
-    "price": 999.99,
+    "price": 999,
     "description": "Lightweight ultrabook for business professionals.",
     "specification": [
       "Processor: Intel i7 11th Gen",
@@ -136,11 +136,11 @@
     "rating": 4
   },
   {
-    "id": "P009",
+    "id": 9,
     "title": "Lenovo",
     "image": "https://i.postimg.cc/rw5KDytw/l3.avif",
     "category": "Laptop",
-    "price": 799.99,
+    "price": 799,
     "description": "Versatile 2-in-1 laptop that can be used as a tablet.",
     "specification": [
       "Processor: Intel i5",
@@ -153,11 +153,11 @@
     "rating": 4
   },
   {
-    "id": "P010",
+    "id": 10,
     "title": "Titan Smartwatch",
     "image": "https://i.postimg.cc/nzhzSvSX/w1.jpg",
     "category": "Watch",
-    "price": 199.99,
+    "price": 199,
     "description": "Smartwatch with heart rate monitor and fitness tracking.",
     "specification": [
       "Display: 1.5 inches",
@@ -170,11 +170,11 @@
     "rating": 4
   },
   {
-    "id": "P011",
+    "id": 11,
     "title": "Rolax Smartwatch",
     "image": "https://i.postimg.cc/hGrv0CsF/w2.webp.jpg",
     "category": "Watch",
-    "price": 299.99,
+    "price": 299,
     "description": "Elegant smartwatch with customizable watch faces and health tracking.",
     "specification": [
       "Display: 1.4 inches",
@@ -187,11 +187,11 @@
     "rating": 3
   },
   {
-    "id": "P012",
+    "id": 12,
     "title": "Samsung Smartwatch",
     "image": "https://i.postimg.cc/DzFmLVqd/w3.jpg",
     "category": "Watch",
-    "price": 149.99,
+    "price": 149,
     "description": "Stylish smartwatch with essential fitness tracking features.",
     "specification": [
       "Display: 1.3 inches",

@@ -10,7 +10,7 @@ const Card = ({ product }) => {
           <figure>
             <img
               src={image}
-              alt="Shoes"
+              alt="img"
               className="h-[150px] w-[150px] rounded-2xl "
             />
           </figure>
