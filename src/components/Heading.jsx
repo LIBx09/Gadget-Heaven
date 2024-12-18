@@ -10,7 +10,7 @@ const Heading = ({ title, subtitle }) => {
 
   return (
     // <div className="bg-[#9538E2] h-[160px] text-center pt-5">
-    <div className="bg-[#9538E2] h-[150px] text-center pt-5">
+    <div className="bg-[#9538E2] h-[250px] md:h-[150px] text-center pt-5">
       <h3 className="text-3xl font-bold text-white">{title}</h3>
       <p className="text-base font-normal text-[#FFFFFF] w-2/4 mx-auto mt-3">
         {subtitle}
